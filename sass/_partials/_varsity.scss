@@ -1,0 +1,39 @@
+#header {
+    background: url('images/banner.png') repeat-x center;
+    border-bottom: 15px solid #DEB406;
+}
+
+#listen-now {
+    .show-container .play {
+        background-image: url('images/play-icon.svg');
+    }
+}
+
+.embed-yt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row-wide {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.su-box:first-child {
+    margin-right: 8px;
+    padding: 15px;
+}
+
+.su-box:last-child {
+    margin-left: 8px;
+    padding: 15px;
+}
+
+.su-box {
+    border: 2px solid #5374B9;
+}
+
+.su-box ul h1 {
+    font-size: 1.2em;
+}
