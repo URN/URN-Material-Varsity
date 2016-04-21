@@ -1,5 +1,5 @@
 #header {
-    background: url('images/banner.png') repeat-x center;
+    // background: url('images/banner.png') repeat-x center;
 }
 
 #nav > ul > .nav-item.current a {
@@ -14,6 +14,23 @@
 
     .message {
         background: $uon-gold;
+    }
+}
+
+.btn {
+    background: $uon-gold;
+    &:hover,
+    &:focus {
+        background: darken($uon-gold, 10%);
+        outline: none;
+    }
+
+    &:active {
+        box-shadow: inset 0 2px 3px -2px black(0.4);
+    }
+
+    &:disabled {
+        background: lighten($uon-gold, 20%);
     }
 }
 
@@ -39,7 +56,7 @@
 }
 
 .su-box {
-    border: 2px solid #5374B9;
+    border: 2px solid rgba(0, 0, 0, 0.15);
 }
 
 .su-box ul h1 {

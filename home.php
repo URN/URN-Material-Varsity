@@ -2,22 +2,14 @@
 
 <div class="main-content">
 
-   <div class="row row-wide">
-        <!-- SU photo -->
-        <a href="http://www.su.nottingham.ac.uk/make-the-change/elections/">
-            <img style="width:100%; height:100%" src="<?php echo get_stylesheet_directory_uri() . "/images/elections-banner.jpg" ?>">
-        </a>
-   </div>
-
-
     <div class="row row-wide">
         <div class="row blogs vertical su-box">
-            <h1>SU Elections Blog Posts</h1>
+            <h1>Varsity Blog Posts</h1>
             <?php
             // Get the most recent blog
             $posts = get_posts(array(
                 'numberposts' => 4,
-                'category_name' => 'SU Elections 2016'
+                'category_name' => 'Varsity 2016'
             ));
 
             echo "<ul class='blog-excerpt'>";
@@ -30,7 +22,7 @@
         </div>
 
         <div class="row vertical su-box">
-            <h1>SU Elections Audio</h1>
+            <h1>Varsity Audio</h1>
 
             <div class="audioboom-feed" data-channel-id="4227797" data-channel-audioboom-type="users" data-channel-type="urn-speech" data-channel-name="URN Speech" data-card-type="0" data-show-image="false"></div>
 

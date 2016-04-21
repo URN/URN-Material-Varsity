@@ -6,10 +6,6 @@
     Version: 0.1
     License: ?
 */
-#header {
-  background: url("images/banner.png") repeat-x center;
-}
-
 #nav > ul > .nav-item.current a {
   border-color: #deb406;
 }
@@ -22,6 +18,20 @@
 }
 #listen-now .message {
   background: #deb406;
+}
+
+.btn {
+  background: #deb406;
+}
+.btn:hover, .btn:focus {
+  background: #ac8c05;
+  outline: none;
+}
+.btn:active {
+  box-shadow: inset 0 2px 3px -2px black(0.4);
+}
+.btn:disabled {
+  background: #fad950;
 }
 
 .embed-yt {
@@ -46,7 +56,7 @@
 }
 
 .su-box {
-  border: 2px solid #5374B9;
+  border: 2px solid rgba(0, 0, 0, 0.15);
 }
 
 .su-box ul h1 {
