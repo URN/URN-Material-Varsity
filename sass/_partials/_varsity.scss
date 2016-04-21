@@ -8,6 +8,7 @@
 
 #listen-now {
     background: $uon-gold;
+
     .show-container .play {
         background-image: url('images/play-icon.svg');
     }
@@ -19,6 +20,7 @@
 
 .btn {
     background: $uon-gold;
+
     &:hover,
     &:focus {
         background: darken($uon-gold, 10%);
@@ -35,14 +37,14 @@
 }
 
 .embed-yt {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row-wide {
-  padding-top: 15px;
-  padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .su-box:first-child {
@@ -57,18 +59,19 @@
 
 .su-box {
     border: 2px solid rgba(0, 0, 0, 0.15);
-}
 
-.su-box ul h1 {
-    font-size: 1.2em;
+    ul h1 {
+        font-size: 1.2em;
+    }
 }
 
 .varsity-scoreboard {
+    margin: 40px 0;
+
     table {
         background: yellow;
         width: 100%;
     }
-
 
     th {
         font-weight: 600;
@@ -78,6 +81,4 @@
     th {
         padding: 10px;
     }
-
-    margin: 40px 0;
 }

@@ -1,4 +1,5 @@
 (function ($) {
+    var numHeaderRows = 2;
 
     var request = $.ajax({
         url: "/api/varsity/scoreboard",
@@ -17,8 +18,14 @@
         $.each(rows, function (i, row) {
             var tds = row.split(",");
 
-            if (i === 0) {
-                var $thead = $("<thead>");
+            if (i < numHeaderRows) {
+                $thead = $table.find("thead");
+
+                if (!$thead.length) {
+                    $thead = $("<thead>");
+                    $table.append($thead);
+                }
+
                 var $tr = $("<tr>");
 
                 $.each(tds, function (i, td) {
