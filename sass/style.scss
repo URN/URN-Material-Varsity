@@ -9,11 +9,7 @@
 
 @import 'compass';
 
-// Re-define colours as UoN green & gold
-$urn-pink: #deb406;
-$urn-purple: #005f36;
-
-// Process original urn-material scss again in order for new colour values to propagate
-@import '../../urn-material/sass/style.scss';
+$uon-green: #005f36;
+$uon-gold: #deb406;
 
 @import '_partials/varsity';

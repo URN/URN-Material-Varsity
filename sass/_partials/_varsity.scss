@@ -1,11 +1,19 @@
 #header {
     background: url('images/banner.png') repeat-x center;
-    border-bottom: 15px solid #DEB406;
+}
+
+#nav > ul > .nav-item.current a {
+    border-color: $uon-gold;
 }
 
 #listen-now {
+    background: $uon-gold;
     .show-container .play {
         background-image: url('images/play-icon.svg');
+    }
+
+    .message {
+        background: $uon-gold;
     }
 }
 
