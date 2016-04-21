@@ -9,12 +9,14 @@
 #listen-now {
     background: $uon-gold;
 
-    .show-container .play {
-        background-image: url('images/play-icon.svg');
-    }
+    .show-container {
+        .play {
+            background-image: url('images/play-icon.svg');
+        }
 
-    .message {
-        background: $uon-gold;
+        .send-message .message {
+            background: $uon-gold;
+        }
     }
 }
 

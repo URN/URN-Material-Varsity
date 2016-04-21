@@ -16,7 +16,7 @@
 #listen-now .show-container .play {
   background-image: url("images/play-icon.svg");
 }
-#listen-now .message {
+#listen-now .show-container .send-message .message {
   background: #deb406;
 }
 
