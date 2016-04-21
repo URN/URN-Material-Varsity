@@ -2,6 +2,8 @@
 
 <div class="main-content">
 
+    <div class="row varsity-scoreboard"></div>
+
     <div class="row row-wide">
         <div class="row blogs vertical su-box">
             <h1>Varsity Blog Posts</h1>

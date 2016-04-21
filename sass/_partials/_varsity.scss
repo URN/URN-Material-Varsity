@@ -62,3 +62,22 @@
 .su-box ul h1 {
     font-size: 1.2em;
 }
+
+.varsity-scoreboard {
+    table {
+        background: yellow;
+        width: 100%;
+    }
+
+
+    th {
+        font-weight: 600;
+    }
+
+    td,
+    th {
+        padding: 10px;
+    }
+
+    margin: 40px 0;
+}
