@@ -68,8 +68,8 @@
     </div>
 
     <div class="embed-yt row row-wide">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj7bGB3G_znsfMi1QXRZLlVAFURrkWKDd" frameborder="0" allowfullscreen></iframe
->    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj7bGB3G_znvMLnUKwsaNUvfRf8M7BQNG" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 
     <div class="row row-wide cover-photos">
