@@ -18,8 +18,6 @@
     </div>
 
     <div class="row varsity-matches">
-        <h1>Varsity Matches</h1>
-
         <table>
             <thead>
                 <tr>

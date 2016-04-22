@@ -3,6 +3,11 @@
     src: url('fonts/digital-7.ttf');
 }
 
+@font-face {
+    font-family: 'Varsity';
+    src: url('fonts/varsity_regular.ttf');
+}
+
 #header {
     // background: url('images/banner.png') repeat-x center;
 }
@@ -84,6 +89,8 @@
     background: #fff;
     display: none;
     margin: 20px 35px;
+    max-height: 400px;
+    overflow: auto;
 
     h1 {
         font-size: 2em;
@@ -128,8 +135,11 @@
     text-align: center;
 
     h1 {
-        font-size: 2em;
+        font-size: 3em;
+        font-family: 'Varsity', 'Open-sans', Arial, sans-serif;
+        font-weight: 400;
         margin-bottom: 15px;
+        text-transform: uppercase;
     }
 
     .scores {
