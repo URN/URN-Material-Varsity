@@ -51,6 +51,12 @@
 .embed-yt {
     display: block;
     text-align: center;
+
+    @include breakpoint(tablet) {
+        iframe {
+            width: 100%;
+        }
+    }
 }
 
 .row-wide {

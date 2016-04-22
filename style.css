@@ -46,6 +46,11 @@
   display: block;
   text-align: center;
 }
+@media (max-width: 780px) {
+  .embed-yt iframe {
+    width: 100%;
+  }
+}
 
 .row-wide {
   padding-top: 15px;
