@@ -32,7 +32,7 @@
   outline: none;
 }
 .btn:active {
-  box-shadow: inset 0 2px 3px -2px black(0.4);
+  box-shadow: inset 0 2px 3px -2px rgba(0, 0, 0, 0.4);
 }
 .btn:disabled {
   background: #fad950;
@@ -134,7 +134,7 @@
 .varsity-scores .score {
   -webkit-flex-grow: 1;
   flex-grow: 1;
-  box-shadow: 0 1px 4px black(0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   margin: 0 5px;
   padding: 10px 35px;
 }

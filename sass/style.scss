@@ -14,4 +14,8 @@ $uon-gold: #deb406;
 $ntu-pink: #e6005b;
 $ntu-blue: #003867;
 
-@import '_partials/varsity';
+@import '../../urn-material/sass/_partials/variables',
+        '../../urn-material/sass/_partials/mixins',
+        '../../urn-material/sass/_partials/functions',
+        '../../urn-material/sass/_partials/breakpoints',
+        '_partials/varsity';
