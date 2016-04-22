@@ -1,8 +1,40 @@
 <?php get_header(); ?>
 
 <div class="main-content">
+    <div class="row varsity-scores">
+        <h1>Varsity Scores</h1>
 
-    <div class="row varsity-scoreboard"></div>
+        <div class="scores">
+            <div class="score">
+                <span class="team">UoN</span>
+                <span class="points uon-points">-</span>
+            </div>
+
+            <div class="score">
+                <span class="team">NTU</span>
+                <span class="points ntu-points">-</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row varsity-matches">
+        <h1>Varsity Matches</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Date</th>
+                    <th>UoN Score</th>
+                    <th>NTU Score</th>
+                    <th>Winner</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
 
     <div class="row row-wide">
         <div class="row blogs vertical su-box">

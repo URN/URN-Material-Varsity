@@ -6,7 +6,7 @@ function theme_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_script('scoreboard', get_stylesheet_directory_uri() . '/js/scoreboard.js', array('jquery'));
+    wp_enqueue_script('scoreboard', get_stylesheet_directory_uri() . '/js/scoreboard.js', array('jquery'), false, true);
 });
 
 ?>

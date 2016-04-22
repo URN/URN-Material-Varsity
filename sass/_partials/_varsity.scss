@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Digital";
+    src: url('fonts/digital-7.ttf');
+}
+
 #header {
     // background: url('images/banner.png') repeat-x center;
 }
@@ -66,12 +71,25 @@
         font-size: 1.2em;
     }
 }
+.main-content {
+    padding-top: 30px;
+}
 
-.varsity-scoreboard {
-    margin: 40px 0;
+.row:first-child.varsity-scores {
+    padding: 10px;
+}
+
+.varsity-matches {
+    @include flex-direction(column);
+    background: white;
+    display: none;
+    margin: 20px 35px;
+
+    h1 {
+        font-size: 2em;
+    }
 
     table {
-        background: yellow;
         width: 100%;
     }
 
@@ -82,5 +100,92 @@
     td,
     th {
         padding: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 0.875em;
+        width: 100%;
+    }
+
+    td,
+    th {
+        padding: 10px;
+    }
+
+    th {
+        border-bottom: 1px solid #999999;
+        text-align: left;
+    }
+
+    td,
+    table thead td {
+        border-bottom: 1px solid #dadada;
+    }
+
+    tr:last-child td {
+        border-bottom: 0;
+    }
+
+    tbody tr:nth-child(even) {
+        background: #f8f8f8;
+    }
+}
+
+.varsity-scores {
+    @include flex-direction(column);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .scores {
+        @include display-flex;
+        @include flex-direction(row);
+    }
+
+    .team {
+        color: white;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .score {
+        @include flex-grow(1);
+        margin: 0 5px;
+        padding: 10px 35px;
+
+        &:first-child {
+            background: $uon-green;
+            border: 6px solid darken($uon-green, 5%);
+
+            .points {
+                color: $uon-gold;
+                text-shadow: 0 0 3px darken($uon-gold, 10%);
+            }
+        }
+
+        &:last-child {
+            background: $ntu-blue;
+            border: 6px solid darken($ntu-blue, 5%);
+
+            .points {
+                color: $ntu-pink;
+                text-shadow: 0 0 3px darken($ntu-pink, 10%);
+            }
+        }
+    }
+
+    .points {
+        display: block;
+        font-family: "Digital", "Open Sans", sans-serif;
+        font-size: 6em;
+        line-height: 0.7;
+        padding-bottom: 20px;
     }
 }

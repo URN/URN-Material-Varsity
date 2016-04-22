@@ -6,6 +6,10 @@
     Version: 0.1
     License: ?
 */
+@font-face {
+  font-family: "Digital";
+  src: url("fonts/digital-7.ttf");
+}
 #nav > ul > .nav-item.current a {
   border-color: #deb406;
 }
@@ -62,17 +66,107 @@
   font-size: 1.2em;
 }
 
-.varsity-scoreboard {
-  margin: 40px 0;
+.main-content {
+  padding-top: 30px;
 }
-.varsity-scoreboard table {
-  background: yellow;
+
+.row:first-child.varsity-scores {
+  padding: 10px;
+}
+
+.varsity-matches {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  background: white;
+  display: none;
+  margin: 20px 35px;
+}
+.varsity-matches h1 {
+  font-size: 2em;
+}
+.varsity-matches table {
   width: 100%;
 }
-.varsity-scoreboard th {
+.varsity-matches th {
   font-weight: 600;
 }
-.varsity-scoreboard td,
-.varsity-scoreboard th {
+.varsity-matches td,
+.varsity-matches th {
   padding: 10px;
+}
+.varsity-matches table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.875em;
+  width: 100%;
+}
+.varsity-matches td,
+.varsity-matches th {
+  padding: 10px;
+}
+.varsity-matches th {
+  border-bottom: 1px solid #999999;
+  text-align: left;
+}
+.varsity-matches td,
+.varsity-matches table thead td {
+  border-bottom: 1px solid #dadada;
+}
+.varsity-matches tr:last-child td {
+  border-bottom: 0;
+}
+.varsity-matches tbody tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.varsity-scores {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.varsity-scores h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+.varsity-scores .scores {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.varsity-scores .team {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+}
+.varsity-scores .score {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  margin: 0 5px;
+  padding: 10px 35px;
+}
+.varsity-scores .score:first-child {
+  background: #005f36;
+  border: 6px solid #004628;
+}
+.varsity-scores .score:first-child .points {
+  color: #deb406;
+  text-shadow: 0 0 3px #ac8c05;
+}
+.varsity-scores .score:last-child {
+  background: #003867;
+  border: 6px solid #002a4e;
+}
+.varsity-scores .score:last-child .points {
+  color: #e6005b;
+  text-shadow: 0 0 3px #b30047;
+}
+.varsity-scores .points {
+  display: block;
+  font-family: "Digital", "Open Sans", sans-serif;
+  font-size: 6em;
+  line-height: 0.7;
+  padding-bottom: 20px;
 }

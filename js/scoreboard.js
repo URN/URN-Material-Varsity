@@ -1,63 +1,69 @@
 (function ($) {
-    var numHeaderRows = 2;
+    "use strict";
 
-    var request = $.ajax({
-        url: "/api/varsity/scoreboard",
+    var $matchesContainer = $(".varsity-matches");
+    var $scoresContainer = $(".varsity-scores");
+
+    var matchesRequest = $.ajax({
+        url: "/api/varsity/matches",
         type: "get",
         dataType: "json",
         data: {}
     });
 
-    request.done(function (data) {
+    var scoresRequest = $.ajax({
+        url: "/api/varsity/scores",
+        type: "get",
+        dataType: "json",
+        data: {}
+    });
+
+    matchesRequest.done(function (data) {
         var csv = data.csv;
 
         var rows = csv.split("\r\n");
 
-        var $table = $("<table>");
+        if (rows.length < 2) {
+            return;
+        }
+
+        var $tbody = $matchesContainer.find("tbody");
 
         $.each(rows, function (i, row) {
+            // First row is headings
+            if (i == 0) {
+                return;
+            }
+
             var tds = row.split(",");
 
-            if (i < numHeaderRows) {
-                $thead = $table.find("thead");
+            var $tr = $("<tr>");
 
-                if (!$thead.length) {
-                    $thead = $("<thead>");
-                    $table.append($thead);
-                }
+            $.each(tds, function (i, td) {
+                var $td = $("<td>");
+                $td.text(td);
+                $tr.append($td);
+            });
 
-                var $tr = $("<tr>");
-
-                $.each(tds, function (i, td) {
-                    var $th = $("<th>");
-                    $th.text(td);
-                    $tr.append($th);
-                });
-
-                $thead.append($tr);
-                $table.append($thead);
-            }
-            else {
-                $tbody = $table.find("tbody");
-
-                if (!$tbody.length) {
-                    $tbody = $("<tbody>");
-                    $table.append($tbody);
-                }
-
-                var $tr = $("<tr>");
-
-                $.each(tds, function (i, td) {
-                    var $td = $("<td>");
-                    $td.text(td);
-                    $tr.append($td);
-                });
-
-                $tbody.append($tr);
-            }
+            $tbody.append($tr);
         });
 
-        $(".varsity-scoreboard").append($table);
+        $matchesContainer.show();
+    });
+
+    scoresRequest.done(function (data) {
+        var csv = data.csv;
+
+        var rows = csv.split("\r\n");
+
+        if (rows.length < 2) {
+            return;
+        }
+
+        $scoresContainer.find(".uon-points").text(rows[0].split(",")[1]);
+        $scoresContainer.find(".ntu-points").text(rows[1].split(",")[1]);
+
+        $scoresContainer.show();
     });
 
 })(jQuery);
