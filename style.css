@@ -7,7 +7,7 @@
     License: ?
 */
 @font-face {
-  font-family: "Digital";
+  font-family: 'Digital';
   src: url("fonts/digital-7.ttf");
 }
 #nav > ul > .nav-item.current a {
@@ -40,8 +40,7 @@
 
 .embed-yt {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .row-wide {
@@ -77,22 +76,12 @@
 .varsity-matches {
   -webkit-flex-direction: column;
   flex-direction: column;
-  background: white;
+  background: #fff;
   display: none;
   margin: 20px 35px;
 }
 .varsity-matches h1 {
   font-size: 2em;
-}
-.varsity-matches table {
-  width: 100%;
-}
-.varsity-matches th {
-  font-weight: 600;
-}
-.varsity-matches td,
-.varsity-matches th {
-  padding: 10px;
 }
 .varsity-matches table {
   border-collapse: collapse;
@@ -105,7 +94,8 @@
   padding: 10px;
 }
 .varsity-matches th {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #999;
+  font-weight: 600;
   text-align: left;
 }
 .varsity-matches td,
@@ -137,13 +127,14 @@
   flex-direction: row;
 }
 .varsity-scores .team {
-  color: white;
+  color: #fff;
   font-size: 2em;
   font-weight: 600;
 }
 .varsity-scores .score {
   -webkit-flex-grow: 1;
   flex-grow: 1;
+  box-shadow: 0 1px 4px black(0.5);
   margin: 0 5px;
   padding: 10px 35px;
 }

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Digital";
+    font-family: 'Digital';
     src: url('fonts/digital-7.ttf');
 }
 
@@ -45,8 +45,7 @@
 
 .embed-yt {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 .row-wide {
@@ -71,6 +70,7 @@
         font-size: 1.2em;
     }
 }
+
 .main-content {
     padding-top: 30px;
 }
@@ -81,25 +81,12 @@
 
 .varsity-matches {
     @include flex-direction(column);
-    background: white;
+    background: #fff;
     display: none;
     margin: 20px 35px;
 
     h1 {
         font-size: 2em;
-    }
-
-    table {
-        width: 100%;
-    }
-
-    th {
-        font-weight: 600;
-    }
-
-    td,
-    th {
-        padding: 10px;
     }
 
     table {
@@ -115,7 +102,8 @@
     }
 
     th {
-        border-bottom: 1px solid #999999;
+        border-bottom: 1px solid #999;
+        font-weight: 600;
         text-align: left;
     }
 
@@ -150,13 +138,14 @@
     }
 
     .team {
-        color: white;
+        color: #fff;
         font-size: 2em;
         font-weight: 600;
     }
 
     .score {
         @include flex-grow(1);
+        box-shadow: 0 1px 4px black(0.5);
         margin: 0 5px;
         padding: 10px 35px;
 
