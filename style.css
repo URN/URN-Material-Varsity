@@ -174,3 +174,26 @@
   line-height: 0.9;
   padding-bottom: 10px;
 }
+
+.tennis-ball {
+  background-color: #71cc00;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+.tennis-ball:before, .tennis-ball:after {
+  border-radius: 50%;
+  border: solid 1em #fff;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.tennis-ball:before {
+  right: 70%;
+}
+.tennis-ball:after {
+  left: 70%;
+}
