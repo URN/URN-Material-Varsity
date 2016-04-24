@@ -104,8 +104,8 @@
                         Today
                     </li>
                 </ul>
-                <a href="<?php echo get_permalink( get_page_by_path( 'schedule' ) )?>">
-                    <button class="btn">Full Schedule</button>
+                <a class="btn full-schedule-link" href="<?php echo get_permalink( get_page_by_path( 'schedule' ) )?>">
+                    Full Schedule
                 </a>
                 <div class="timetable">
                     <ul class="times">
