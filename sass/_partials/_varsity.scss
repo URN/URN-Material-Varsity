@@ -193,30 +193,3 @@
         padding-bottom: 10px;
     }
 }
-
-.tennis-ball {
-    background-color: #71cc00;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-
-    &:before,
-    &:after {
-        border-radius: 50%;
-        border: solid 1em #fff;
-        box-sizing: border-box;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-    }
-
-    &:before {
-        right: 70%;
-    }
-
-    &:after {
-        left: 70%;
-    }
-}
