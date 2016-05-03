@@ -193,3 +193,25 @@
         padding-bottom: 10px;
     }
 }
+
+.row.vertical {
+    .clip {
+        @include breakpoint(mobile) {
+            display: block;
+        }
+    }
+}
+
+.su-box {
+    @include breakpoint(mobile) {
+        h1 {
+            display: block !important;
+        }
+
+        margin: 15px 0;
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}

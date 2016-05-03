@@ -174,3 +174,21 @@
   line-height: 0.9;
   padding-bottom: 10px;
 }
+
+@media (max-width: 620px) {
+  .row.vertical .clip {
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .su-box {
+    margin: 15px 0;
+  }
+  .su-box h1 {
+    display: block !important;
+  }
+  .su-box:last-child {
+    margin-left: 0;
+  }
+}
