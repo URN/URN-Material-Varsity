@@ -87,7 +87,7 @@
   flex-direction: column;
   background: #fff;
   display: none;
-  max-height: 400px;
+  max-height: 260px;
   overflow: auto;
 }
 .varsity-matches h1 {
