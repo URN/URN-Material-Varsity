@@ -41,6 +41,20 @@
 .btn:disabled {
   background: #fad950;
 }
+.btn.listen {
+  background: #7b6303;
+  padding: 0 8px;
+}
+.btn.listen:hover {
+  background: #947804;
+  outline: none;
+}
+.btn.listen:active {
+  box-shadow: inset 0 2px 3px -2px rgba(0, 0, 0, 0.4);
+}
+.btn.listen::after {
+  content: '';
+}
 
 .embed-yt {
   display: block;
