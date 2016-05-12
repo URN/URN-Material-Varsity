@@ -43,17 +43,9 @@
 }
 .btn.listen {
   background: #7b6303;
-  padding: 0 8px;
 }
 .btn.listen:hover {
   background: #947804;
-  outline: none;
-}
-.btn.listen:active {
-  box-shadow: inset 0 2px 3px -2px rgba(0, 0, 0, 0.4);
-}
-.btn.listen::after {
-  content: '';
 }
 
 .embed-yt {
@@ -83,6 +75,17 @@
 
 .su-box {
   border: 2px solid rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 620px) {
+  .su-box {
+    margin: 15px 0;
+  }
+  .su-box h1 {
+    display: block !important;
+  }
+  .su-box:last-child {
+    margin-left: 0;
+  }
 }
 .su-box ul h1 {
   font-size: 1.2em;
@@ -192,17 +195,5 @@
 @media (max-width: 620px) {
   .row.vertical .clip {
     display: block;
-  }
-}
-
-@media (max-width: 620px) {
-  .su-box {
-    margin: 15px 0;
-  }
-  .su-box h1 {
-    display: block !important;
-  }
-  .su-box:last-child {
-    margin-left: 0;
   }
 }
