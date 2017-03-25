@@ -35,23 +35,29 @@
     </div>
 
     <div class="row row-wide">
-        <div class="row blogs vertical su-box">
+        <p class="live-link" style="font-size: 2em;">
+            Check out our live coverage of the Varisty Rugby <a href="<?php echo get_template_directory_uri();?>/var2017_rugby">here</a>
+        </p>
+    </div>
+
+    <div class="row row-wide">
+        <!-- <div class="row blogs vertical su-box">
             <h1>Varsity Blog Posts</h1>
             <?php
-            // Get the most recent blog
-            $posts = get_posts(array(
-                'numberposts' => 4,
-                'category_name' => 'Varsity 2016'
-            ));
-
-            echo "<ul class='blog-excerpt'>";
-            foreach ( $posts as $post ) {
-                echo format_blog_excerpt($post, false);
-            }
-            echo "</ul>";
+            // // Get the most recent blog
+            // $posts = get_posts(array(
+            //     'numberposts' => 4,
+            //     'category_name' => 'Varsity 2016'
+            // ));
+            //
+            // echo "<ul class='blog-excerpt'>";
+            // foreach ( $posts as $post ) {
+            //     echo format_blog_excerpt($post, false);
+            // }
+            // echo "</ul>";
             ?>
 
-        </div>
+        </div> -->
 
         <div class="row vertical su-box">
             <h1>Varsity Audio</h1>
@@ -62,32 +68,6 @@
                 <button class="btn">See more</button>
             </a>
 
-        </div>
-    </div>
-
-    <div class="embed-yt row row-wide">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj7bGB3G_znvMLnUKwsaNUvfRf8M7BQNG" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-
-    <div class="row row-wide cover-photos">
-
-        <div class="module">
-            <a target="_blank" href="//audioboom.com/boos/3831925-the-nineteen-percent-1-body-contact">
-                <img style="width:100%" src="<?php echo get_stylesheet_directory_uri() . "/images/cover_pulse.jpg" ?>">
-            </a>
-        </div>
-
-        <div class="module">
-            <a href="<?php echo get_permalink( get_page_by_path( 'competitions' ) )?>">
-                <img style="width:100%" src="<?php echo get_stylesheet_directory_uri() . "/images/cover_varsity.jpg" ?>">
-            </a>
-        </div>
-
-        <div class="module">
-            <a href="<?php echo get_permalink( get_page_by_path( 'competitions' ) )?>">
-                <img style="width:100%" src="<?php echo get_template_directory_uri() . "/images/cover_2.jpg" ?>">
-            </a>
         </div>
     </div>
 
@@ -145,36 +125,6 @@
 
             <h1>Headlines</h1>
             <div class="audioboom-feed" data-card-type="0" data-channel-id="4227841" data-channel-audioboom-type="users" data-channel-type="urn-headlines" data-channel-name="URN Headlines"></div>
-        </div>
-    </div>
-
-    <div class="row row-wide cover-photos">
-        <div class="module">
-            <a href="<?php echo get_permalink( get_page_by_path( 'urn-tv' ) )?>" target="_blank">
-                <img style="width:100%" src="<?php echo get_template_directory_uri() . "/images/cover_4.jpg" ?>">
-            </a>
-        </div>
-
-        <div class="module blogs">
-            <?php
-            // Get the most recent blog
-            $posts = get_posts(array(
-               'numberposts' => 3
-            ));
-
-            echo "<ul class='blog-excerpt'>";
-            foreach ( $posts as $post ) {
-                echo format_blog_excerpt($post, false);
-                break;
-            }
-            echo "</ul>";
-            ?>
-        </div>
-
-        <div class="module">
-            <a href="<?php echo get_permalink( get_page_by_path( 'podcasts' ) )?>">
-                <img style="width:100%" src="<?php echo get_template_directory_uri() . "/images/cover_urn.jpg" ?>">
-            </a>
         </div>
     </div>
 </div>

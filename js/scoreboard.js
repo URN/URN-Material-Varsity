@@ -31,7 +31,7 @@
 
         $.each(rows, function (i, row) {
             // First row is headings
-            if (i == 0) {
+            if (i === 0) {
                 return;
             }
 
