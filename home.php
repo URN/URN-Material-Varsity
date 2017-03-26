@@ -36,7 +36,69 @@
 
     <div class="row row-wide">
         <p class="live-link" style="font-size: 2em;">
-            Check out our live coverage of the Varsity Volleyball <a href="<?php echo get_template_directory_uri();?>/var2017_volleyball">here</a>
+            <?php
+                switch (date ('d-m-y')) {
+                    case '25-03-17':
+                        echo 'Check out our live coverage of the Varsity Rugby League <a href="' . get_template_directory_uri() . '/var2017_rugby">here</a>' ;
+                        break;
+
+                    case '26-03-17':
+                        echo 'Check out our live coverage of the Varsity Volleyball <a href="' . get_template_directory_uri() . '/var2017_volleyball">here</a>' ;
+                        break;
+
+                    case '27-03-17':
+                        echo 'Check out our live coverage of the Varsity Futsal <a href="' . get_template_directory_uri() . '/var2017_futsal">here</a>' ;
+                        break;
+
+                    case '28-03-17':
+                        echo 'Check out our live coverage of the Varsity Lacrosse <a href="' . get_template_directory_uri() . '/var2017_lacrosse">here</a>' ;
+                        break;
+
+                    case '29-03-17':
+                        echo 'Check out our live coverage of the Varsity Super Wednesday <a href="' . get_template_directory_uri() . '/var2017_wed29">here</a>' ;
+                        break;
+
+                    case '30-03-17':
+                        echo 'Check out our live coverage of the Varsity Ice Hockey <a href="' . get_template_directory_uri() . '/var2017_ice">here</a>' ;
+                        break;
+
+                    case '07-05-17':
+                        echo 'Check out our live coverage of the Varsity Netball <a href="' . get_template_directory_uri() . '/var2017_netball">here</a></br> and our coverage of the Varisty Water Polo <a href="' . get_template_directory_uri() . '/var2017_water_polo">here</a>' ;
+                        break;
+
+                    case '08-05-17':
+                        echo 'Check out our live coverage of the Varsity Hockey <a href="' . get_template_directory_uri() . '/var2017_hockey">here</a>' ;
+                        break;
+
+                    case '09-05-17':
+                        echo 'Check out our live coverage of the Varsity Basketball <a href="' . get_template_directory_uri() . '/var2017_basketball">here</a>' ;
+                        break;
+
+                    case '10-05-17':
+                        echo 'Check out our live coverage of the Varsity Super Wednesday <a href="' . get_template_directory_uri() . '/var2017_wed10">here</a>' ;
+                        break;
+
+                    case '11-05-17':
+                        echo 'Check out our live coverage of the Varsity Football <a href="' . get_template_directory_uri() . '/var2017_football">here</a>' ;
+                        break;
+
+                    case '12-05-17':
+                        echo 'Check out our live coverage of the Varsity Cricket <a href="' . get_template_directory_uri() . '/var2017_cricket">here</a>' ;
+                        break;
+
+                    case '13-05-17':
+                        echo 'Check out our live coverage of the Varsity American Football <a href="' . get_template_directory_uri() . '/var2017_american_football">here</a>' ;
+                        break;
+
+                    case '14-05-17':
+                        echo 'Check out our live coverage of the Varsity Rugby Union <a href="' . get_template_directory_uri() . '/var2017_rugby_union">here</a>' ;
+                        break;
+
+                    default:
+                        echo '';
+                    break;
+                }
+            ?>
         </p>
     </div>
 
