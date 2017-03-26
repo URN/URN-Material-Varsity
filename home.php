@@ -36,29 +36,11 @@
 
     <div class="row row-wide">
         <p class="live-link" style="font-size: 2em;">
-            Check out our live coverage of the Varisty Rugby <a href="<?php echo get_template_directory_uri();?>/var2017_rugby">here</a>
+            Check out our live coverage of the Varsity Volleyball <a href="<?php echo get_template_directory_uri();?>/var2017_volleyball">here</a>
         </p>
     </div>
 
     <div class="row row-wide">
-        <!-- <div class="row blogs vertical su-box">
-            <h1>Varsity Blog Posts</h1>
-            <?php
-            // // Get the most recent blog
-            // $posts = get_posts(array(
-            //     'numberposts' => 4,
-            //     'category_name' => 'Varsity 2016'
-            // ));
-            //
-            // echo "<ul class='blog-excerpt'>";
-            // foreach ( $posts as $post ) {
-            //     echo format_blog_excerpt($post, false);
-            // }
-            // echo "</ul>";
-            ?>
-
-        </div> -->
-
         <div class="row vertical su-box">
             <h1>Varsity Audio</h1>
 
